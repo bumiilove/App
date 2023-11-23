@@ -1,4 +1,13 @@
-@tailwind base;
+/* 해당 파일은 globals.css로, 전역적으로 적용되는 
+CSS 스타일을 정의하는 파일입니다.
+주석으로 표시된 부분은 be15d9bcejpp라는 식별자로 시작하며, 
+Tailwind CSS를 사용하여 기본 스타일, 컴포넌트, 유틸리티를 가져오는 부분입니다.
+
+:root 선택자를 사용하여 CSS 변수를 정의하고 있습니다. --foreground-rgb는 전경색(RGB)을, --background-start-rgb는 배경 시작색(RGB)을, --background-end-rgb는 배경 종료색(RGB)을 나타냅니다.
+미디어 쿼리를 사용하여 사용자의 시스템이 어두운 테마를 선호하는 경우에 대한 스타일을 정의하고 있습니다. 어두운 테마일 경우, 전경색과 배경색을 반전시킵니다.
+body 선택자를 사용하여 전경색과 배경색을 적용하고 있습니다. 배경은 선형 그라디언트로 설정되어 있으며, 시작 색과 종료 색은 CSS 변수를 사용하여 동적으로 결정됩니다. */
+
+/* @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
@@ -24,4 +33,4 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
-}
+} */
