@@ -4,7 +4,8 @@ export default function Home() {
   return (
     <>
     <h2>Welcome!</h2>
-    Hello, Next.js! Sexy Taebok!
+    Hello, Next.js!
+    <br></br><img src="/image.jpg"></img> 
     </>
   )
 }
