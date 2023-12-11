@@ -1,0 +1,23 @@
+{
+  "topics": [
+    {"id": 1,"title": "html","body": "This page is html page"},
+    {"id": 2,"title": "css","body": "This page is css page"}
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

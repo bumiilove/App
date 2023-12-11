@@ -7,17 +7,20 @@ export const metadata = {
 }
 
 export default async function RootLayout({ children }) {
-  const resp = await fetch('http://localhost:9999/topics/'); 
+  const resp = await fetch('http://localhost:9999/topics'); 
   const topics = await resp.json();
   console.log('page/layout.js/topics', topics) 
+
   return (
     <html>
       <body>
-        <h1><Link href="/">WEB</Link></h1>
+        <h1><Link href="/">Tire wear estimation program</Link></h1>
         <ol>
-          {topics.map(topic=>{
+
+          {topics.map((topic)=>{
             return <li key={topic.id}><Link href={`/read/${topic.id}`}>{topic.title}</Link></li>
           })}
+        
         </ol>
           
         {children}
