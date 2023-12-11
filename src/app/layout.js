@@ -16,14 +16,11 @@ export default async function RootLayout({ children }) {
       <body>
         <h1><Link href="/">Tire wear estimation program</Link></h1>
         <ol>
-
           {topics.map((topic)=>{
             return <li key={topic.id}><Link href={`/read/${topic.id}`}>{topic.title}</Link></li>
           })}
-        
-        </ol>
-          
-        {children}
+        </ol>  
+          {children}
           <ul>
             <li><Link href="/create">Create</Link></li>
             <li><Link href="/update">Update</Link></li>
